@@ -1,5 +1,5 @@
-class InviteController < ApplicationController
-  def create
+class TeamController > ApplicationController
+  def invite
     token = Token.find_by_uuid params[:uuid]
     if token
       invite = SlackAPI.invite(params[:email], token.token)
