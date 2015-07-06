@@ -15,7 +15,7 @@ Generate and set your `secret_key_base` and `token_key` in `secrets.yml`.
 
 Before inviting users, you have to register your API token with the broker. This token MUST belong to a team administrator.
 
-    POST /register
+    POST /token/register
 
 #### Parameters
 | Name          | Type       | Description                                               |
@@ -37,7 +37,7 @@ If all is well, you will receive a UUID in the response. Save this in your appli
 
 To invite users, you'll use your UUID you received when you registered your API token.
 
-    POST /invite
+    POST /team/invite
 
 #### Parameters
 | Name          | Type       | Description                               |
@@ -60,7 +60,7 @@ If your parameters are valid, you will receive a confirmation that you have invi
 
 If you no longer want your token stored, you can deregister it.
 
-    POST /deregister
+    POST /token/deregister
 
 #### Parameters
 | Name          | Type       | Description                               |
