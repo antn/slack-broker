@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/_ping', to: 'debug#ping'
   post '/register', to: 'token#create'
   post '/deregister', to: 'token#destroy'
-  post '/invite', to: 'invite#create'
+  post '/invite', to: 'team#invite'
+  post '/info', to: 'team#info'
 end

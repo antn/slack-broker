@@ -13,4 +13,10 @@ class SlackAPI
       { ok: false, error: request["error"] }
     end
   end
+
+  def self.info(token)
+    options = { query: { token: token} }
+    request = HTTParty.post("https://slack.com/api/team.info", options)
+    request.to_json
+  end
 end
