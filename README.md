@@ -33,6 +33,42 @@ If all is well, you will receive a UUID in the response. Save this in your appli
 }
 ```
 
+### Info
+
+You can get information about the team your token is for by using that team's uuid.
+
+    POST /team/info
+
+#### Parameters
+| Name          | Type       | Description                               |
+| ------------- | ---------- | ----------------------------------------- |
+| `uuid`        | `string`   | UUID from token that you registered
+
+#### Response
+
+If your uuid is valid, you will receive information about the team it is for.
+
+```
+{
+  "ok": true,
+  "team": {
+    "id": "T12345",
+    "name": "My Team",
+    "domain": "example",
+    "email_domain": "",
+    "icon": {
+      "image_34": "https:\/\/...",
+      "image_44": "https:\/\/...",
+      "image_68": "https:\/\/...",
+      "image_88": "https:\/\/...",
+      "image_102": "https:\/\/...",
+      "image_132": "https:\/\/...",
+      "image_default": true
+    }
+  }
+}
+```
+
 ### Invite
 
 To invite users, you'll use your UUID you received when you registered your API token.
