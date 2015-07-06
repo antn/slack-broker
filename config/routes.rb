@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post '/register', to: 'token#create'
   post '/deregister', to: 'token#destroy'
   post '/invite', to: 'team#invite'
+  post '/info', to: 'team#info'
 end
