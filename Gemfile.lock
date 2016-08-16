@@ -69,11 +69,11 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_xml (0.5.5)
-    mysql2 (0.4.4)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.18.4)
     pkg-config (1.1.7)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -125,7 +125,7 @@ DEPENDENCIES
   better_errors (~> 2.1, >= 2.1.1)
   binding_of_caller (~> 0.7.2)
   httparty (~> 0.14.0)
-  mysql2 (~> 0.4.4)
+  pg (~> 0.18.4)
   rails (= 5.0.0)
 
 BUNDLED WITH

@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20160815052010) do
 
-  create_table "tokens", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "tokens", force: :cascade do |t|
     t.string   "uuid"
     t.string   "encrypted_token"
     t.datetime "created_at",         null: false
