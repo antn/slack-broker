@@ -1,12 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rails', '4.2.2'
-gem 'rails-api'
-gem 'mysql2'
-gem 'httparty'
-gem 'attr_encrypted'
+gem "rails", "5.0.0"
+gem "pg", "~> 0.18.4"
+gem "httparty", "~> 0.14.0"
+gem "attr_encrypted", "~> 3.0", ">= 3.0.3"
 
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  gem "better_errors", "~> 2.1", ">= 2.1.1"
+  gem "binding_of_caller", "~> 0.7.2"
 end
