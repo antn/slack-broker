@@ -35,6 +35,3 @@ test:
 #
 production:
   <<: *default
-  database: slack-broker_production
-  username: slack-broker
-  password: <%= ENV['SLACK-BROKER_DATABASE_PASSWORD'] %>
