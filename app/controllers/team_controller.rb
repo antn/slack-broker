@@ -1,4 +1,5 @@
 class TeamController < ApplicationController
+  require_dependency "slack_api"
   before_action :set_uuid
 
   def invite
