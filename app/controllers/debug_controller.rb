@@ -1,6 +1,6 @@
 class DebugController < ApplicationController
   def empty
-    render nothing: true
+    head :ok
   end
 
   def ping
